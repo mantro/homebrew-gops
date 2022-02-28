@@ -5,21 +5,21 @@
 class Gops < Formula
   desc "Opinionated deployment helper"
   homepage "https://github.com/mantro/gops"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mantro/gops/releases/download/v0.1.3/gops_0.1.3_Darwin_arm64.tar.gz"
-      sha256 "efa082fb9fd195215380fa1a45d0c1b6eb6cf6a858ab207f79fc5bfef7d818e7"
+      url "https://github.com/mantro/gops/releases/download/v0.1.4/gops_0.1.4_Darwin_arm64.tar.gz"
+      sha256 "67eb79f9aa26d34e94780b6da2050571a375e151777a9ba74c98d465e2620d16"
 
       def install
         bin.install "gops"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mantro/gops/releases/download/v0.1.3/gops_0.1.3_Darwin_x86_64.tar.gz"
-      sha256 "7769fee2006667d7c80dd2e984fe7ee2cf07f26e01ed4af54d683e5ce604ccc8"
+      url "https://github.com/mantro/gops/releases/download/v0.1.4/gops_0.1.4_Darwin_x86_64.tar.gz"
+      sha256 "abcdb1ac90e6379aa591d59e69ffb4fe66bbc9e70e1ce110a0289c85380e1a47"
 
       def install
         bin.install "gops"
@@ -29,16 +29,16 @@ class Gops < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mantro/gops/releases/download/v0.1.3/gops_0.1.3_Linux_arm64.tar.gz"
-      sha256 "86b8017ffeed6774f2cda8e14d88f6c8b5d0cb09cffa58d7925b6c15a7147c87"
+      url "https://github.com/mantro/gops/releases/download/v0.1.4/gops_0.1.4_Linux_arm64.tar.gz"
+      sha256 "ea35affadf067aaca5f3ad8564ca38b1ce8aba40731df8a46b67792c4a96af49"
 
       def install
         bin.install "gops"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mantro/gops/releases/download/v0.1.3/gops_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "ce2ec095f5dde4c653a94af77afd899a2303ff3017e8612432097a5d7af15726"
+      url "https://github.com/mantro/gops/releases/download/v0.1.4/gops_0.1.4_Linux_x86_64.tar.gz"
+      sha256 "fdf25792e3a1ebea03aa48853f46786bd938ffd0cecc2d9638754c6f57da3c7c"
 
       def install
         bin.install "gops"
